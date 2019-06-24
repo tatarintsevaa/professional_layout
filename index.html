@@ -4,19 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>BRAND</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="conteiner">
-            <div class="header__left">
+        <div class="conteiner header__content">
+            <div class="header__block">
                 <a href="#" class="logo"><img class="logo_img" src="img/logo.png" alt="logo">bran<span class="d">d</span></a>
                 <form action="#" class="header__form">
-                    <input type="text"><button><img src="img/search.png" alt="search" class="search"></button>
+                    <div class="form__browse">Browse<img src="img/arrow.png" alt="arrow" class="arrow"></div>
+                    <input type="text" placeholder="Search for Item..." class="form__input">
+                    <div class="form__search"><img src="img/search.png" alt="search" class="search"></div>
                 </form>
             </div>
-            <div class="header__rigth"></div>
+            <div class="header__block">
+                <img class="header__cart" src="img/cart.svg" alt="cart">
+                <a href="#" class="button">My Account <img src="img/arrow_white.png" alt="arrow_white"></a>
+            </div>
         </div>
     </header>
-</body></html>
+</body>
+
+</html>

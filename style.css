@@ -203,3 +203,120 @@ body button:hover {
 .category__content div:first-of-type {
     margin-bottom: 20px;
 }
+
+.fetured-items__h3 {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.fetured-items__p {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-align: center;
+}
+
+.fetured-items {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.product__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__name {
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product .product__box:first-of-type {
+    margin-bottom: 39px;
+}
+
+.product__name h4:first-of-type {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.product__name h4:nth-of-type(2) {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+
+.product__item {
+    background-image: url(img/Hover_.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+    
+}
+.product__item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product__link:hover {
+    opacity: 0.2;
+    transition: 0.3s linear;
+    
+}
+
+.category__badge {
+    height: 82px;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 26px;
+    border-left: 1px solid #e8e9eb;
+}
+
+.category__item {
+    position: relative;
+}
+
+.category__h4 {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+.category__h2 {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+#wallet {
+    margin-left: 149px;
+}
+
+.category__item_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

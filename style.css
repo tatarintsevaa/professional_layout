@@ -182,3 +182,24 @@ body button:hover {
 .fasion {
     color: #f16d7f;
 }
+
+.categiry__item_mini {
+    width: 560px;
+    height: 261px;
+    background-color: #dadad2;
+}
+
+.category {
+    margin-top: 98px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category__item_big {
+    width: 560px;
+    height: 542px;
+}
+
+.category__content div:first-of-type {
+    margin-bottom: 20px;
+}

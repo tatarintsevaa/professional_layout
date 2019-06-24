@@ -123,3 +123,19 @@ body button:hover {
 .header__cart {
     margin-right: 26px;
 }
+
+.menu__link {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+}

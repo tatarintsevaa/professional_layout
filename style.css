@@ -54,7 +54,8 @@ body button:hover {
 }
 
 .form__input {
-    width: 280px;;
+    width: 280px;
+    ;
     height: 38px;
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
@@ -110,12 +111,13 @@ body button:hover {
     color: #ffffff;
     line-height: 38px;
     padding-left: 15px;
-    padding-right: 15px;   
+    padding-right: 15px;
 }
 
 .button img {
     padding-left: 8px;
 }
+
 .logo_img {
     margin-right: 13px;
 }
@@ -138,4 +140,45 @@ body button:hover {
     justify-content: center;
     align-items: center;
     height: 51px;
+}
+
+.slider__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(img/slider_back.png);
+    background-position: 0 -52px;
+}
+
+.slider {
+    height: 613px;
+    background-color: #e8e8e8;
+}
+
+.slider__h2 {
+    color: #222222;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.slider__h3 {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+.slider__text {
+    padding-left: 12px;
+    border-left: 12px solid #f16d7f;
+}
+
+.fasion {
+    color: #f16d7f;
 }

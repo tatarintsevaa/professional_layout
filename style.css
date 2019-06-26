@@ -317,3 +317,91 @@ body button:hover {
 
 
    
+
+.product_buttom {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batton_product {
+    padding-left: 24px;
+    padding-right: 43px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.batton_product:hover {
+    background: #f16d7f url(img/arrow_product.png) no-repeat 180px 22px;
+}
+
+.offer__image {
+    padding-left: 39px;
+    padding-top: 146px;
+    width: 767px;
+    height: 100%;
+    background-image: url(img/offer_image.jpg);
+    box-sizing: border-box;
+}
+
+.offer {
+    height: 529px;
+    display: flex;
+}
+
+.offer__h1 {
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.offer__h3 {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 0.9px;
+}
+
+.offer_red {
+   color: #f16d7f;
+}
+
+.offer__conditions__text {
+    padding-left: 35px;
+}
+
+.offer__conditions__h3 {
+    margin-bottom: 17px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.offer__conditions__p {
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+}
+
+.offer__conditions {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #222224;
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.offer__conditions__block {
+    display: flex;
+    justify-content: space-around;
+}

@@ -56,7 +56,6 @@ body button:hover {
 
 .form__input {
     width: 280px;
-    ;
     height: 38px;
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
@@ -133,7 +132,7 @@ body button:hover {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 14px 23px;
 }
 
 .menu {
@@ -647,4 +646,90 @@ body button:hover {
 
 .links__map__footer:hover {
     color: #f16d7f;
+}
+
+.menu__link:hover {
+    border-bottom: 3px solid #ef5b70;
+}
+
+.heading__h1 {
+    color: #f16d7f;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.heading__nav {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    list-style-type: none;
+}
+
+.heading__product_back {
+    height: 148px;
+    background-color: #f8f3f4;
+    margin-bottom: 60px;
+}
+
+.heading__nav__links {
+    color: #636363;
+}
+
+.heading__product_block {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar__summary {
+    width: 243px;
+    height: 37px;
+    line-height: 37px;
+    color: #6f6e6e;;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 3px solid #ef5b70;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__summary::-webkit-details-marker {
+  display: none;
+}
+
+.sidebar__summary::after {
+  content: '\25bc';
+}
+
+.sidebar__category[open] > summary {
+   color: #ef5b70;
+}
+
+.sidebar__category[open] > summary::after {
+  content: '\25b2';
+}
+.sidebar__ul {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.sidebar__links {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.sidebar__list {
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.sidebar__links:hover {
+    color: #ef5b70;
 }

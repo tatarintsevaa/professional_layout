@@ -65,6 +65,7 @@ body button:hover {
     font-weight: 100;
     letter-spacing: 0.35px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 
@@ -226,7 +227,7 @@ body button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .product__box {
@@ -262,20 +263,24 @@ body button:hover {
 }
 
 
-.product__item {
-    background-image: url(img/Hover_.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 -2px;
-    
-}
+
 .product__item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    transition: 0.3s linear;
+
 }
 
-.product__link:hover {
-    opacity: 0.2;
+.product__item {
+    position: relative;
+}
+
+.product__item:hover .product__link img {
+    filter: brightness(50%);
     transition: 0.3s linear;
-    
+}
+
+.product__item:hover .product__add {
+    visibility: visible;
 }
 
 .category__badge {
@@ -317,7 +322,7 @@ body button:hover {
 }
 
 
-   
+
 
 .product_buttom {
     height: 220px;
@@ -335,6 +340,7 @@ body button:hover {
     font-weight: 700;
     letter-spacing: 0.4px;
 }
+
 .batton_product:hover {
     background: #f16d7f url(img/arrow_product.png) no-repeat 180px 22px;
 }
@@ -370,7 +376,7 @@ body button:hover {
 }
 
 .offer_red {
-   color: #f16d7f;
+    color: #f16d7f;
 }
 
 .offer__conditions__text {
@@ -414,7 +420,7 @@ body button:hover {
 
 .subscribe__footer {
     width: 1618px;
-    height: 438px;   
+    height: 438px;
     background-image: url(img/footer_image.jpg);
 }
 
@@ -430,7 +436,7 @@ body button:hover {
     margin-top: -975px;
 }
 
-.subscribe__p_1{
+.subscribe__p_1 {
     color: #222224;
     font-size: 16px;
     font-style: italic;
@@ -498,6 +504,7 @@ body button:hover {
     background-color: #e1e1e1;
     border: none;
     padding-left: 28px;
+    padding-right: 28px;
     border-radius: 23px 0 0 23px;
 }
 
@@ -541,6 +548,7 @@ body button:hover {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.35px;
+    margin-top: 29px;
 }
 
 .links__map__h4 {
@@ -549,6 +557,7 @@ body button:hover {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.45px;
+    margin-bottom: 12px;
 }
 
 .links__map__p {
@@ -569,10 +578,73 @@ body button:hover {
 }
 
 .social {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .social_back {
     height: 79px;
     background-color: #e6e6e6;
+}
+
+.product__add {
+    width: 123px;
+    height: 39px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    position: absolute;
+    top: 98px;
+    left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+
+
+.add__image {
+    margin: 8px;
+}
+
+.product__add:hover {
+    border: 1px solid #f16d7f;
+}
+
+.social__text {
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.footer__social {
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 32px;
+    color: #b2b2b2;
+    margin-left: 8px;
+}
+.footer__social:hover {
+    color: #f7f7f8;
+    background-color: #f16d7f;
+}
+
+
+
+.links__map__footer {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.links__map__footer:hover {
+    color: #f16d7f;
 }

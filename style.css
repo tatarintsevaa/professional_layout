@@ -518,6 +518,7 @@ body button:hover {
     border-radius: 0 23px 23px 0;
     padding-left: 20px;
     padding-right: 20px;
+    border: none;
 }
 
 .subscribe__form {
@@ -696,6 +697,7 @@ body button:hover {
     margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
 }
 
 .sidebar__summary::-webkit-details-marker {
@@ -732,4 +734,13 @@ body button:hover {
 
 .sidebar__links:hover {
     color: #ef5b70;
+}
+
+.button_input:focus {
+    border: none;
+    outline: none;
+}
+
+.button_input:hover {
+    cursor: pointer;
 }

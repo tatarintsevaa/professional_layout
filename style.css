@@ -323,7 +323,7 @@ body button:hover {
 
 
 
-.product_buttom {
+.product_button {
     height: 220px;
     display: flex;
     justify-content: center;
@@ -741,4 +741,56 @@ body button:hover {
 
 .button_input:hover {
     cursor: pointer;
+}
+
+.product__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__settings {
+    width: 263px;
+}
+
+.product__settins__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__settings__h3 {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+
+.tranding__names__ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 176px;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.tranding__names__li {
+    line-height: 12px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-right: 1px solid #dfdfdf;
+   margin-bottom: 10px;
+}
+.tranding__names__li a {
+    display: block;
+}
+.tranding__names__li a:hover {
+    color: #ef5b70;
+}
+.tranding__names__ul .tranding__names__li:nth-child(3n) {
+    border-right: none;
+}
+.tranding__names__ul .tranding__names__li:nth-child(3n+1){
+    padding-left: 0;
 }

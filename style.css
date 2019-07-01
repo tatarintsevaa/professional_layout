@@ -418,17 +418,15 @@ body button:hover {
 
 
 .subscribe__footer {
-    width: 1618px;
     height: 438px;
     background-image: url(img/footer_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 
-.conteiner_footer {
-    width: 1618px;
-    margin: 0 auto;
-}
+
 
 .footer {
     height: 975px;

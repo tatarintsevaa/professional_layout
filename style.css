@@ -883,11 +883,29 @@ body button:hover {
     margin-right: 46px; }
   .drop__flex:last-of-type {
     margin-right: 0; }
+  .drop__banner {
+    background-image: url("img/drop__baner.jpg");
+    background-repeat: no-repeat;
+    height: 118px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    margin-top: 20px; }
 
-.menu__link {
+.banner__text {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase; }
+
+.menu__list {
   position: relative; }
 
-.menu__link:hover .drop_mega_menu {
+.menu__list:hover .drop_mega_menu {
   display: flex; }
 
 .drop_mega_menu {

@@ -1,106 +1,102 @@
-* 
+$width: 1140px
+
+*
   margin: 0
   padding: 0
 
 
 
-body 
+body
   font-family: 'Lato', sans-serif
 
 
-body a 
+body a
   text-decoration: none
 
 
-body button:hover 
+body button:hover
   cursor: pointer
 
 
-.header 
+.header
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   border: 1px solid #ececec
   background-color: #ffffff
   height: 100px
 
+  &__logo
+    color: #222222
+    font-size: 27px
+    font-weight: 300
+    text-transform: uppercase
+    display: flex
+    align-items: center
 
-.logo 
-  color: #222222
-  font-size: 27px
-  font-weight: 300
-  text-transform: uppercase
-  display: flex
-  align-items: center
+  &__form
+    margin-left: 37px
+    display: flex
+
+  &__form__browse
+    height: 38px
+    border-radius: 3px 0 0 3px
+    border: 1px solid #e6e6e6
+    border-right: none
+    background-color: #cdcdcc
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+    line-height: 38px
+    padding-left: 12px
+    padding-right: 12px
+
+  .d
+    color: #f16d7f
+    font-weight: 400
+
+  &__form__input
+    width: 280px
+    height: 38px
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    color: #a4a4a4
+    font-size: 14px
+    font-weight: 100
+    letter-spacing: 0.35px
+    padding-left: 16px
+    padding-right: 16px
+
+  &__form__search
+    width: 38px
+    height: 38px
+    border-radius: 0 3px 3px 0
+    border: 1px solid #e6e6e6
+    border-left: none
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .arrow
+    padding-left: 8px
+
+  &__block
+    display: flex
+    align-items: center
+
+  &__content
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__cart
+    margin-right: 26px
+
+  .logo_img
+    margin-right: 13px
 
 
-.d 
-  color: #f16d7f
-  font-weight: 400
-
-
-.conteiner 
+.container
   margin: 0 auto
-  width: 1140px
-
-
-.form__browse 
-  height: 38px
-  border-radius: 3px 0 0 3px
-  border: 1px solid #e6e6e6
-  border-right: none
-  background-color: #cdcdcc
-  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
-  line-height: 38px
-  padding-left: 12px
-  padding-right: 12px
-
-
-.form__input 
-  width: 280px
-  height: 38px
-  border: 1px solid #e6e6e6
-  background-color: #ffffff
-  color: #a4a4a4
-  font-size: 14px
-  font-weight: 100
-  letter-spacing: 0.35px
-  padding-left: 16px
-  padding-right: 16px
-
-
-
-
-.form__search 
-  width: 38px
-  height: 38px
-  border-radius: 0 3px 3px 0
-  border: 1px solid #e6e6e6
-  border-left: none
-  background-color: #ffffff
-  display: flex
-  align-items: center
-  justify-content: center
-
-
-.header__form 
-  margin-left: 37px
-  display: flex
-
-
-
-.arrow 
-  padding-left: 8px
-
-
-.header__block 
-  display: flex
-  align-items: center
-
-
-.header__content 
-  height: 100%
-  display: flex
-  justify-content: space-between
-  align-items: center
+  width: $width
 
 
 .button 
@@ -113,26 +109,9 @@ body button:hover
   line-height: 38px
   padding-left: 15px
   padding-right: 15px
+  img
+    padding-left: 8px
 
-
-.button img 
-  padding-left: 8px
-
-
-.logo_img 
-  margin-right: 13px
-
-
-.header__cart 
-  margin-right: 26px
-
-
-.menu__link 
-  color: #222222
-  font-size: 14px
-  font-weight: 700
-  text-transform: uppercase
-  padding: 14px 23px
 
 
 .menu 
@@ -142,84 +121,98 @@ body button:hover
   align-items: center
   height: 51px
 
+  &__link
+    color: #222222
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 14px 23px
+    &:hover
+      border-bottom: 3px solid #ef5b70
 
-.slider__content 
-  height: 100%
-  display: flex
-  align-items: center
-  background-image: url(img/slider_back.png)
-  background-position: 0 -52px
+
 
 
 .slider 
   height: 613px
   background-color: #e8e8e8
 
+  &__content
+    height: 100%
+    display: flex
+    align-items: center
+    background-image: url(img/slider_back.png)
+    background-position: 0 -52px
 
-.slider__h2 
-  color: #222222
-  font-size: 60px
-  font-weight: 700
-  text-transform: uppercase
-  letter-spacing: 1.5px
-  line-height: 44px
-  margin-bottom: 20px
+  &__h2
+    color: #222222
+    font-size: 60px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.5px
+    line-height: 44px
+    margin-bottom: 20px
 
+  &__h3
+    color: #222222
+    font-size: 40px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 32px
 
-.slider__h3 
-  color: #222222
-  font-size: 40px
-  font-weight: 700
-  text-transform: uppercase
-  letter-spacing: 1px
-  line-height: 32px
+  .slider__text
+    padding-left: 12px
+    border-left: 12px solid #f16d7f
 
-
-.slider__text 
-  padding-left: 12px
-  border-left: 12px solid #f16d7f
-
-
-.fasion 
-  color: #f16d7f
-
-
-.categiry__item_mini 
-  width: 560px
-  height: 261px
-  background-color: #dadad2
-
+  .fasion
+    color: #f16d7f
 
 .category 
   margin-top: 98px
   display: flex
   justify-content: space-between
 
+  &__item_mini
+    width: 560px
+    height: 261px
+    background-color: #dadad2
 
-.category__item_big 
-  width: 560px
-  height: 542px
+  &__item_big
+    width: 560px
+    height: 542px
+
+  &__content div:first-of-type
+    margin-bottom: 20px
+
+  &__h2
+    color: #f16d7f
+    font-size: 30px
+    letter-spacing: 0.75px
+    font-weight: 900
+    text-transform: uppercase
+
+  &__badge
+    height: 82px
+    background-color: #ffffff
+    padding: 16px 20px
+    position: absolute
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin-top: 26px
+    border-left: 1px solid #e8e9eb
+
+  &__item
+    position: relative
 
 
-.category__content div:first-of-type 
-  margin-bottom: 20px
-
-
-.fetured-items__h3 
-  color: #222222
-  font-size: 30px
-  font-weight: 700
-  letter-spacing: 0.75px
-  text-align: center
-
-
-.fetured-items__p 
-  color: #9f9f9f
-  font-size: 14px
-  font-weight: 400
-  letter-spacing: 0.35px
-  text-align: center
-
+  &__h4
+    color: #222222
+    font-size: 18px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.45px
 
 .fetured-items 
   height: 210px
@@ -227,106 +220,93 @@ body button:hover
   flex-direction: column
   justify-content: center
 
+  &__h3
+    color: #222222
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 0.75px
+    text-align: center
+
+  &__p
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+    text-align: center
 
 
-
-
-.product__name 
-  height: 83px
+.product
   display: flex
-  flex-direction: column
-  justify-content: space-around
+  justify-content: space-between
+  flex-wrap: wrap
 
+  &__name
+    height: 83px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
 
+  &__name h4:first-of-type
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    padding-left: 15px
 
+  .product__name h4:nth-of-type(2)
+    color: #f16d7f
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    padding-left: 15px
 
-.product__name h4:first-of-type 
-  color: #222222
-  font-size: 13px
-  font-weight: 400
-  text-transform: uppercase
-  padding-left: 15px
+  &__item:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+    transition: 0.3s linear
 
+  &__item
+    position: relative
+    margin-bottom: 30px
 
-.product__name h4:nth-of-type(2) 
-  color: #f16d7f
-  font-size: 16px
-  font-weight: 700
-  text-transform: uppercase
-  padding-left: 15px
+  &__item:hover .product__link img
+    filter: brightness(50%)
+    transition: 0.3s linear
 
+  .product__item:hover .product__add
+    visibility: visible
 
+  &__button__box
+    height: 220px
+    display: flex
+    justify-content: center
+    align-items: center
 
+  &__add
+    width: 123px
+    height: 39px
+    border: 1px solid #ffffff
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+    position: absolute
+    top: 98px
+    left: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    visibility: hidden
+    margin-bottom: 9px
+    &:hover
+      border: 1px solid #f16d7f
 
-.product__item:hover 
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-  transition: 0.3s linear
-
-
-
-.product__item 
-  position: relative
-  margin-bottom: 30px
-
-
-.product__item:hover .product__link img 
-  filter: brightness(50%)
-  transition: 0.3s linear
-
-
-.product__item:hover .product__add 
-  visibility: visible
-
-
-.category__badge 
-  height: 82px
-  background-color: #ffffff
-  padding: 16px 20px
-  position: absolute
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  margin-top: 26px
-  border-left: 1px solid #e8e9eb
-
-
-.category__item 
-  position: relative
-
-
-.category__h4 
-  color: #222222
-  font-size: 18px
-  font-weight: 900
-  text-transform: uppercase
-  letter-spacing: 0.45px
-
-
-.category__h2 
-  color: #f16d7f
-  font-size: 30px
-  letter-spacing: 0.75px
-  font-weight: 900
-  text-transform: uppercase
-
-
-
-
-#wallet 
-  margin-left: 149px
+  .add__image
+    margin: 8px
 
 
 
 
 
-.product_button 
-  height: 220px
-  display: flex
-  justify-content: center
-  align-items: center
-
-
-.batton_product 
+.batton_product
   padding-left: 24px
   padding-right: 43px
   height: 48px
@@ -334,353 +314,311 @@ body button:hover
   font-size: 16px
   font-weight: 700
   letter-spacing: 0.4px
+  &:hover
+    background: #f16d7f url(img/arrow_product.png) no-repeat 180px 22px
 
-
-.batton_product:hover 
-  background: #f16d7f url(img/arrow_product.png) no-repeat 180px 22px
-
-
-.offer__image 
-  padding-left: 39px
-  padding-top: 146px
-  width: 767px
-  height: 100%
-  background-image: url(img/offer_image.jpg)
-  box-sizing: border-box
-
-
-.offer 
+.offer
   height: 529px
   display: flex
 
+  &__image
+    padding-left: 39px
+    padding-top: 146px
+    width: 767px
+    height: 100%
+    background-image: url(img/offer_image.jpg)
+    box-sizing: border-box
 
-.offer__h1 
-  color: #ffffff
-  font-size: 54px
-  font-weight: 700
-  text-transform: uppercase
-  letter-spacing: 1.5px
+  &__h1
+    color: #ffffff
+    font-size: 54px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.5px
 
+  &__h3
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 32px
+    letter-spacing: 0.9px
 
-.offer__h3 
-  color: #ffffff
-  font-weight: 700
-  text-transform: uppercase
-  font-size: 32px
-  letter-spacing: 0.9px
+  &_red
+    color: #f16d7f
 
+  &__conditions__image
+    margin-bottom: 17px
 
-.offer_red 
-  color: #f16d7f
+  &__conditions__text
+    padding-left: 35px
 
-.offer__conditions__image
-  margin-bottom: 17px
+  &__conditions__h3
+    margin-bottom: 17px
+    color: #fbfbfb
+    font-size: 20px
+    font-weight: 700
+    letter-spacing: 0.5px
 
-.offer__conditions__text 
-  padding-left: 35px
+  &__conditions__p
+    color: #fbfbfb
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.35px
+    text-align: center
 
+  &__conditions
+    padding-left: 40px
+    padding-right: 40px
+    background-color: #222224
+    width: 373px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
 
-
-.offer__conditions__h3 
-  margin-bottom: 17px
-  color: #fbfbfb
-  font-size: 20px
-  font-weight: 700
-  letter-spacing: 0.5px
-
-
-.offer__conditions__p 
-  color: #fbfbfb
-  font-size: 14px
-  font-weight: 300
-  letter-spacing: 0.35px
-  text-align: center
-
-
-.offer__conditions 
-  padding-left: 40px
-  padding-right: 40px
-  background-color: #222224
-  width: 373px
-  display: flex
-  flex-direction: column
-  justify-content: space-around
-
-
-.offer__conditions__block 
-  display: flex
-  justify-content: space-around
-
+  &__conditions__block
+    display: flex
+    justify-content: space-around
 
 .slr 
-  height: 975px
+  height: 537px
 
 
 
-.subscribe__footer 
+.subscribe
   height: 438px
   background-image: url(img/footer_image.jpg)
   background-position: center
   background-repeat: no-repeat
 
+  &__box
+    margin-top: 95px
+    height: 100%
+    display: flex
+
+  &__block
+    width: $width / 2
+
+
+  &__p_1
+    color: #222224
+    font-size: 16px
+    font-style: italic
+    letter-spacing: 0.4px
+    line-height: 26px
+    margin-bottom: 19px
+
+
+  &__h3
+    color: #f16d7f
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.4px
+
+  &__p_2
+    color: #222224
+    font-size: 12px
+    font-weight: 300
+    letter-spacing: 0.3px
+    line-height: 14px
+
+  &__block_left
+    display: flex
+    padding-top: 123px
+
+
+  &__block_left_text
+    margin-left: 28px
+
+
+  &__block_riht__h3
+    color: #222224
+    font-size: 24px
+    font-weight: 400
+    letter-spacing: 0.6px
+    text-transform: uppercase
+    line-height: 42px
+
+  &__block_riht__h5
+    color: #222224
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+    margin-bottom: 35px
+
+  &__input
+    opacity: 0.67
+    color: #222224
+    font-size: 14px
+    font-weight: 400
+    background-color: #e1e1e1
+    border: none
+    padding-left: 28px
+    padding-right: 28px
+    border-radius: 23px 0 0 23px
+
+  &__form
+    display: flex
+
+
+  &__block_riht
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    align-items: center
 
+  .button_input
+    display: block
+    height: 46px
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+    line-height: 46px
+    border-radius: 0 23px 23px 0
+    padding-left: 20px
+    padding-right: 20px
+    border: none
 
 
 
 
-.footer 
-  height: 975px
-  margin-top: -975px
 
 
-.subscribe__p_1 
-  color: #222224
-  font-size: 16px
-  font-style: italic
-  letter-spacing: 0.4px
-  line-height: 26px
-  margin-bottom: 19px
+.footer
+  height: 537px
+  margin-top: -537px
 
+  &__box
+    padding-top: 100px
+    padding-bottom: 100px
+    display: flex
+    justify-content: space-between
 
-.subscribe__block 
-  width: calc(1140px/2)
+  &__description__p
+    color: #898989
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.35px
+    margin-top: 29px
 
+  &__nav__h4
+    color: #f16d7f
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    margin-bottom: 12px
 
-.subscribe__h3 
-  color: #f16d7f
-  font-size: 16px
-  font-weight: 700
-  letter-spacing: 0.4px
+  &__nav
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 
 
-.subscribe__p_2 
-  color: #222224
-  font-size: 12px
-  font-weight: 300
-  letter-spacing: 0.3px
-  line-height: 14px
+  &__nav__links
+    color: #898989
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.4px
+    &:hover
+      color: #f16d7f
 
+  &__description
+    width: 427px
 
-.subscribe 
-  margin-top: 95px
-  display: flex
-  height: 100%
+  &__social
+    height: 79px
+    background-color: #e6e6e6
 
+  &__social__box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
 
-.subscribe__block_left 
-  display: flex
-  padding-top: 123px
+  &__social__text
+    color: #7a7a7a
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.4px
 
 
-.subscribe__block_left_text 
-  margin-left: 28px
+  &__social__links
+    height: 32px
+    width: 32px
+    background-color: #fff
+    text-align: center
+    line-height: 32px
+    color: #b2b2b2
+    margin-left: 8px
 
+  &__social__links:hover
+    color: #f7f7f8
+    background-color: #f16d7f
 
-.subscribe__block_riht__h3 
-  color: #222224
-  font-size: 24px
-  font-weight: 400
-  letter-spacing: 0.6px
-  text-transform: uppercase
-  line-height: 42px
 
 
-.subscribe__block_riht__h5 
-  color: #222224
-  font-size: 14px
-  font-weight: 400
-  letter-spacing: 0.35px
-  margin-bottom: 35px
 
 
-.subscribe__input 
-  opacity: 0.67
-  color: #222224
-  font-size: 14px
-  font-weight: 400
-  background-color: #e1e1e1
-  border: none
-  padding-left: 28px
-  padding-right: 28px
-  border-radius: 23px 0 0 23px
 
 
-.button_input 
-  display: block
-  height: 46px
-  color: #ffffff
-  font-size: 14px
-  font-weight: 400
-  letter-spacing: 0.35px
-  line-height: 46px
-  border-radius: 0 23px 23px 0
-  padding-left: 20px
-  padding-right: 20px
-  border: none
 
 
-.subscribe__form 
-  display: flex
 
 
-.subscribe__block_riht 
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-content: center
-  align-items: center
 
 
 
 
-.map 
-  padding-top: 100px
-  padding-bottom: 100px
-  display: flex
-  justify-content: space-between
 
 
-.map__logo__p 
-  color: #898989
-  font-size: 14px
-  font-weight: 300
-  letter-spacing: 0.35px
-  margin-top: 29px
-
-
-.links__map__h4 
-  color: #f16d7f
-  font-size: 18px
-  font-weight: 700
-  text-transform: uppercase
-  letter-spacing: 0.45px
-  margin-bottom: 12px
-
-
-.links__map__p 
-  color: #898989
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-
-
-.logo__footer 
-  width: 427px
-
-
-.links__map 
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-
-
-.social 
-  display: flex
-  justify-content: space-between
-  align-items: center
-  height: 100%
-
-
-.social_back 
-  height: 79px
-  background-color: #e6e6e6
-
-
-.product__add 
-  width: 123px
-  height: 39px
-  border: 1px solid #ffffff
-  color: #ffffff
-  font-size: 13px
-  font-weight: 700
-  position: absolute
-  top: 98px
-  left: 70px
-  display: flex
-  justify-content: center
-  align-items: center
-  visibility: hidden
-  margin-bottom: 9px
-
-
-
-
-.add__image 
-  margin: 8px
-
-
-.product__add:hover 
-  border: 1px solid #f16d7f
-
-
-.social__text 
-  color: #7a7a7a
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-
-
-.footer__social 
-  height: 32px
-  width: 32px
-  background-color: #fff
-  text-align: center
-  line-height: 32px
-  color: #b2b2b2
-  margin-left: 8px
-
-.footer__social:hover 
-  color: #f7f7f8
-  background-color: #f16d7f
-
-
-
-
-.links__map__footer 
-  color: #898989
-  font-size: 16px
-  font-weight: 400
-  letter-spacing: 0.4px
-
-
-.links__map__footer:hover 
-  color: #f16d7f
-
-
-.menu__link:hover 
-  border-bottom: 3px solid #ef5b70
-
-
-.heading__h1 
-  color: #f16d7f
-  font-size: 24px
-  font-weight: 400
-  text-transform: uppercase
-
-
-.heading__nav 
-  font-size: 14px
-  font-weight: 700
-  text-transform: uppercase
-  display: flex
-  list-style-type: none
-
-
-.heading__product_back 
+.heading
   height: 148px
   background-color: #f8f3f4
   margin-bottom: 60px
 
 
-.heading__nav__links 
-  color: #636363
+  &__h1
+    color: #f16d7f
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
 
 
-.heading__product_block 
-  height: 100%
-  display: flex
-  justify-content: space-between
-  align-items: center
+  &__nav
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    display: flex
+    list-style-type: none
+
+  &__block
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__breadСrumbs
+    color: #636363
+    font-size: 14px
+    font-weight: 300
+    text-transform: uppercase
+    &:hover
+      color: #f16d7f
+
+  &__breadСrumbs_active
+    color: #f16d7f
+    font-weight: 700
+
+
+
+
+
+
+
+
+
 
 
 .sidebar__summary 
@@ -907,10 +845,7 @@ body button:hover
 
 .sort__box__drop:hover 
   color: #ef5b70
-.product 
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
+
 
 
 .sidebar 

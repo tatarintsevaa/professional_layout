@@ -474,16 +474,19 @@ body button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .heading__breadСrumbs {
+  .heading__bread-crumbs {
     color: #636363;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase; }
-    .heading__breadСrumbs:hover {
+    .heading__bread-crumbs:hover {
       color: #f16d7f; }
-  .heading__breadСrumbs_active {
+  .heading__bread-crumbs_active {
     color: #f16d7f;
     font-weight: 700; }
+
+.star-rating {
+  color: #e4af48; }
 
 .sidebar__summary {
   width: 243px;

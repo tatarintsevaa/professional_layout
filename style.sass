@@ -257,20 +257,19 @@ body button:hover
     text-transform: uppercase
     padding-left: 15px
 
-  &__item:hover
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-    transition: 0.3s linear
-
   &__item
     position: relative
     margin-bottom: 30px
+    transition: box-shadow 0.3s linear
+    &:hover
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+    &:hover .product__link img
+      filter: brightness(50%)
+    &:hover .product__add
+      visibility: visible
 
-  &__item:hover .product__link img
-    filter: brightness(50%)
-    transition: 0.3s linear
-
-  .product__item:hover .product__add
-    visibility: visible
+  &__link img
+    transition: all  0.3s linear
 
   &__button__box
     height: 220px
@@ -293,6 +292,7 @@ body button:hover
     align-items: center
     visibility: hidden
     margin-bottom: 9px
+    transition: border  0.3s linear
     &:hover
       border: 1px solid #f16d7f
 
@@ -845,7 +845,7 @@ body button:hover
   border-radius: 3px
 
 
-.product__linkbox 
+.product__linkbox
   position: absolute
   top: 98px
   left: 70px

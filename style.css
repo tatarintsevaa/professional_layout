@@ -215,17 +215,18 @@ body button:hover {
     font-weight: 700;
     text-transform: uppercase;
     padding-left: 15px; }
-  .product__item:hover {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    transition: 0.3s linear; }
   .product__item {
     position: relative;
-    margin-bottom: 30px; }
-  .product__item:hover .product__link img {
-    filter: brightness(50%);
-    transition: 0.3s linear; }
-  .product .product__item:hover .product__add {
-    visibility: visible; }
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s linear; }
+    .product__item:hover {
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+    .product__item:hover .product__link img {
+      filter: brightness(50%); }
+    .product__item:hover .product__add {
+      visibility: visible; }
+  .product__link img {
+    transition: all 0.3s linear; }
   .product__button__box {
     height: 220px;
     display: flex;
@@ -245,7 +246,8 @@ body button:hover {
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    margin-bottom: 9px; }
+    margin-bottom: 9px;
+    transition: border 0.3s linear; }
     .product__add:hover {
       border: 1px solid #f16d7f; }
   .product .add__image {

@@ -66,6 +66,8 @@ body button:hover {
   .header__block {
     display: flex;
     align-items: center; }
+    .header__block_right {
+      position: relative; }
   .header__content {
     height: 100%;
     display: flex;
@@ -487,9 +489,6 @@ body button:hover {
     color: #f16d7f;
     font-weight: 700; }
 
-.star-rating {
-  color: #e4af48; }
-
 .sidebar__summary {
   width: 243px;
   height: 37px;
@@ -835,5 +834,33 @@ body button:hover {
 
 .drop_mega_menu {
   display: none; }
+
+.star-rating {
+  color: #e4af48;
+  font-size: 12px; }
+
+.delete {
+  color: #c0c0c0; }
+
+.cart-drop {
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 40px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea; }
+  .cart-drop__h3 {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .cart-drop__box {
+    display: flex;
+    align-items: center; }
+  .cart-drop__price {
+    color: #f16d7f;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

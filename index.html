@@ -6,6 +6,7 @@
     <title>BRAND</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,30 +22,58 @@
                 </form>
             </div>
             <div class="header__block header__block_right">
-                <a href="#" class=""><img class="header__cart" src="img/cart.svg" alt="cart"></a>
-                <a href="#" class="button">My Account <img src="img/arrow_white.png" alt="arrow_white"></a>
-                <div class="cart-drop">
-                    <div class="cart-drop__box">
-                        <a href="single-page.html" class="cart-drop__link">
-                            <img src="img/cart-img.jpg" alt="image">
-                        </a>
-                        <div class="cart-drop__text">
-                            <h3 class="cart-drop__h3">Rebox Zane</h3>
-                            <div class="cart-drop__rating">
-                                <i class="fas fa-star star-rating"></i>
-                                <i class="fas fa-star star-rating"></i>
-                                <i class="fas fa-star star-rating"></i>
-                                <i class="fas fa-star star-rating"></i>
-                                <i class="fas fa-star star-rating"></i>
-                                <i class="fas fa-star-half-alt star-rating"></i>
+                <div class="header__cart">
+                    <a href="#" class="header__cart_link"><img src="img/cart.svg" alt="cart"></a>
+                    <div class="cart-drop">
+                        <div class="cart-drop__box">
+                            <a href="single-page.html" class="cart-drop__link">
+                                <img src="img/cart-img.jpg" alt="image">
+                            </a>
+                            <div class="cart-drop__text">
+                                <h3 class="cart-drop__h3">Rebox Zane</h3>
+                                <div class="cart-drop__rating">
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star-half-alt star-rating"></i>
+                                </div>
+                                <div class="cart-drop__price">
+                                    1 x $250
+                                </div>
                             </div>
-                            <div class="cart-drop__price">
-                                1 x $250
-                            </div>
+                            <a href="#" class="delete__button"><i class="fas fa-times-circle delete"></i></a>
                         </div>
-                        <a href="#" class="delete__button"><i class="fas fa-times-circle delete"></i></a>
+                        <div class="cart-drop__box">
+                            <a href="single-page.html" class="cart-drop__link">
+                                <img src="img/cart-img1.jpg" alt="image">
+                            </a>
+                            <div class="cart-drop__text">
+                                <h3 class="cart-drop__h3">Rebox Zane</h3>
+                                <div class="cart-drop__rating">
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star star-rating"></i>
+                                    <i class="fas fa-star-half-alt star-rating"></i>
+                                </div>
+                                <div class="cart-drop__price">
+                                    1 x $250
+                                </div>
+                            </div>
+
+                            <a href="#" class="delete__button"><i class="fas fa-times-circle delete"></i></a>
+                        </div>
+                        <div class="sum">
+                            <h2 class="sum__text">TOTAL</h2>
+                            <h2 class="sum__text">$500.00</h2>
+                        </div>
+                        <a href="#" class="cart-drop__button">Checkout</a>
+                        <a href="#" class="cart-drop__button">Go to cart</a>
                     </div>
                 </div>
+                <a href="#" class="button">My Account <img src="img/arrow_white.png" alt="arrow_white"></a>
+
             </div>
         </div>
     </header>
@@ -52,7 +81,7 @@
         <ul class="menu">
             <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
             <li class="menu__list">
-                <div class="drop drop_mega_menu">
+                <div class="drop drop_mega-menu">
                     <div class="drop__flex">
                         <h3 class="drop__h3">Women</h3>
                         <ul class="drop__ul">
@@ -99,7 +128,7 @@
                 </div>
                 <a href="product.html" class="menu__link">Man</a></li>
             <li class="menu__list">
-                <div class="drop drop_mega_menu">
+                <div class="drop drop_mega-menu">
                     <div class="drop__flex">
                         <h3 class="drop__h3">Women</h3>
                         <ul class="drop__ul">
@@ -146,7 +175,7 @@
                 </div>
                 <a href="#" class="menu__link">Women</a></li>
             <li class="menu__list">
-                <div class="drop drop_mega_menu">
+                <div class="drop drop_mega-menu">
                     <div class="drop__flex">
                         <h3 class="drop__h3">Women</h3>
                         <ul class="drop__ul">
@@ -193,7 +222,7 @@
                 </div>
                 <a href="#" class="menu__link">Kids</a></li>
             <li class="menu__list">
-                <div class="drop drop_mega_menu">
+                <div class="drop drop_mega-menu">
                     <div class="drop__flex">
                         <h3 class="drop__h3">Women</h3>
                         <ul class="drop__ul">

@@ -90,8 +90,9 @@ body button:hover
     justify-content: space-between
     align-items: center
 
-  &__cart
+  &__cart_link
     margin-right: 26px
+
 
   .logo_img
     margin-right: 13px
@@ -1001,27 +1002,48 @@ body button:hover
   position: relative
 
 
-.menu__list:hover .drop_mega_menu
+.menu__list:hover .drop_mega-menu
   display: flex
 
 
-.drop_mega_menu
+.drop_mega-menu
   display: none
 
 .star-rating
   color: #e4af48
-  font-size: 12px
+  font-size: 10px
 
 .delete
   color: #c0c0c0
+  &:hover
+    transform: rotate(90deg)
+    transition: 0.3s ease
+
+
 
 .cart-drop
   border-radius: 5px
-  padding: 20px
+  padding: 0 17px 10px 17px
   position: absolute
-  top: 40px
+  top: 67px
+  right: -54px
   background-color: #ffffff
   border: 1px solid #eaeaea
+  opacity: 0
+  visibility: hidden
+
+  &::before
+    content: ''
+    width: 10px
+    height: 10px
+    background-color: #fff
+    display: block
+    position: absolute
+    top: -6px
+    left: 30px
+    transform: rotate(45deg)
+    border-top: 1px solid #ececec
+    border-left: 1px solid #ececec
 
 
   &__h3
@@ -1029,16 +1051,106 @@ body button:hover
     font-size: 12px
     font-weight: 700
     text-transform: uppercase
+    margin-bottom: 10px
+
+  &__rating
+    margin-bottom: 10px
 
   &__box
+    width: 230px
     display: flex
     align-items: center
+    padding: 17px 0
+    border-bottom: 1px solid #ededed
 
   &__price
     color: #f16d7f
     font-size: 12px
     font-weight: 400
     text-transform: uppercase
+
+  &__text
+    margin-left: 15px
+    margin-right: 52px
+    height: 100%
+
+  .sum
+    padding: 19px 0 32px 0
+    display: flex
+    justify-content: space-between
+
+    &__text
+      color: #222222
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+
+  &__button
+    display: block
+    width: 225px
+    height: 50px
+    border: 1px solid #eaeaea
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    line-height: 50px
+    margin-bottom: 10px
+    &:hover
+      border: 1px solid #f16d7f
+      color: #f16d7f
+      transition: 0.3s ease
+
+
+.header__cart
+  height: 70px
+  display: flex
+  align-items: center
+
+.header__cart:hover .cart-drop
+  opacity: 1
+  visibility: visible
+  animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+.image-slider
+  position: relative
+  height: 777px
+  max-width: 1607px
+  margin: 0 auto
+  &__control
+    position: absolute
+    width: 15%
+    height: 100%
+    top: 0
+    display: flex
+    align-items: center
+    &_left
+      left: 0
+    &_right
+      right: 0
+      display: flex
+      justify-content: flex-end
+    &:hover .control-icon
+      opacity: 0.5
+
+  .control-icon
+    width: 47px
+    height: 47px
+    background-color: #2a2a2a
+    opacity: 0.3
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: opacity 0.3s ease
+    &:hover
+      opacity: 0.5
+    &__item
+      color: #ffffff
+      font-size: 24px
+
+
+
 
 
 

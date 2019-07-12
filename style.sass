@@ -561,6 +561,9 @@ body button:hover
   height: 148px
   background-color: #f8f3f4
   margin-bottom: 60px
+  &_single-page
+    margin: 0
+
 
 
   &__h1
@@ -1031,6 +1034,7 @@ body button:hover
   border: 1px solid #eaeaea
   opacity: 0
   visibility: hidden
+  z-index: 1
 
   &::before
     content: ''
@@ -1113,6 +1117,9 @@ body button:hover
   visibility: visible
   animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
 
+.product-box
+  position: relative
+  height: 1421px
 .image-slider
   position: relative
   height: 777px
@@ -1150,8 +1157,162 @@ body button:hover
       font-size: 24px
 
 
+.product-description
+  position: absolute
+  text-align: center
+  border: 1px solid #eaeaea
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #ffffff
+  left: 0
+  right: 0
+  bottom: -50px
+  &__h3
+    color: #f16d7f
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding-top: 73px
+  &__h1
+    color: #4d4d4d
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 67px
+  &__p
+    color: #5e5e5e
+    font-size: 14px
+    font-weight: 300
+    max-width: 619px
+    margin: 0 auto
+    line-height: 24px
+    margin-bottom: 28px
+  &__details
+    max-width: 334px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    &_h2
+      color: #2f2f2f
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      margin-right: 44px
+      span
+        color: #b9b9b9
 
+  &__price
+    color: #ef5b70
+    font-size: 24px
+    font-weight: 700
+    margin-top: 37px
+    padding-bottom: 43px
+    width: 642px
+    border-bottom: 1px solid #eaeaea
 
+  &__devider
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 14px
+    margin-bottom: 17px
+    &_thin
+      height: 1px
+      width: 42px
+      background-color: #eaeaea
+    &_bold
+      height: 3px
+      width: 63px
+      background-color: #ef5b70
 
+    &__line
+      width: 642px
+      height: 1px
+      background-color: #ef5b70
+      margin: 0 auto
 
+  &__filter
+    width: 537px
+    display: flex
+    justify-content: space-between
+    margin-top: 63px
+    &_h1
+      color: #2f2f2f
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      text-align: left
+      margin-bottom: 16px
+    &_settings
+      width: 142px
+      height: 33px
+      border: 1px solid #eaeaea
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-right: 14px
+      padding-left: 9px
+      color: #bcbcbc
+      font-size: 14px
+      font-weight: 400
+    .settings
+      display: flex
+      align-items: center
+      &__color_red
+        width: 12px
+        height: 12px
+        background-color: #ef5b70
+        margin-right: 11px
+      &__color_green
+        width: 12px
+        height: 12px
+        background-color: green
+        margin-right: 11px
+      &__color_black
+        width: 12px
+        height: 12px
+        background-color: black
+        margin-right: 11px
+      &__color_blue
+        width: 12px
+        height: 12px
+        background-color: blue
+        margin-right: 11px
+      &__text
+        color: #bcbcbc
+        font-size: 14px
+        font-weight: 400
+
+  &__angle
+    color: #bcbcbc
+
+  &__button
+    height: 55px
+    border: 1px solid #ef5b70
+    color: #ef5b70
+    font-size: 16px
+    font-weight: 700
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0 206px
+    margin-top: 28px
+    margin-bottom: 122px
+    & img
+      margin-right: 15px
+    &:hover
+      background-color: #ef5b70
+      color: #fff
+
+.addition-offer
+  margin-top: 120px
+
+  &__h1
+    color: #4d4d4d
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 72px
 

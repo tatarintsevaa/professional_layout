@@ -64,7 +64,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="delete__button"><i class="fas fa-times-circle delete"></i></a>
+                        <a href="#"><i class="fas fa-times-circle delete"></i></a>
                     </div>
                     <div class="sum">
                         <h2 class="sum__text">TOTAL</h2>
@@ -284,138 +284,132 @@
         </ul>
     </div>
 </header>
-<div class="product-box">
-    <div class="image-slid  er">
-        <div class="image-slider__item">
-            <img src="img/image-slider1.jpg" alt="image">
-        </div>
-        <a href="#" class="image-slider__control image-slider__control_left" title="Previous">
-            <span class="control-icon"><i class="fas fa-angle-left control-icon__item"></i></span>
-        </a>
-        <a href="#" class="image-slider__control image-slider__control_right" title="Next">
-            <span class="control-icon"><i class="fas fa-angle-right control-icon__item"></i></span>
-        </a>
-    </div>
-    <section class=" container product-description">
-        <h3 class="product-description__h3">WOMEN COLLECTION</h3>
-        <div class="product-description__devider">
-            <div class="product-description__devider_thin"></div>
-            <div class="product-description__devider_bold"></div>
-            <div class="product-description__devider_thin"></div>
-        </div>
-        <h1 class="product-description__h1">Moschino Cheap And Chic</h1>
-
-        <p class="product-description__p">Compellingly actualize fully researched processes before proactive
-            outsourcing. Progressively syndicate collaborative architectures before
-            <nobr>cutting-edge</nobr>
-            services. Completely visualize parallel core competencies rather than exceptional portals.
-        </p>
-        <div class="product-description__details">
-            <h2 class="product-description__details_h2">
-                MATERIAL:<span>COTTON</span>
-            </h2>
-            <h2 class="product-description__details_h2">
-                DESIGNER:<span>BINBURHAN</span>
-            </h2>
-        </div>
-        <div class="product-description__price">
-            $561
-        </div>
-        <div class="product-description__filter">
-            <div class="product-description__filter_box">
-                <h1 class="product-description__filter_h1">CHOOSE COLOR</h1>
-                <div class="product-description__filter_settings">
-                    <div class="settings">
-                        <div class="settings__color_red"></div>
-                        <p class="settings__text">Red</p>
-                    </div>
-                    <i class="fas fa-angle-down product-description__angle"></i>
-                </div>
-                <!-- <div class="product-description__filter_drop">
-                    <div class="product-description__filter_settings">
-                        <div class="settings">
-                            <div class="settings__color_green"></div>
-                            <p class="settings__text">Green</p>
-                        </div>
-                    </div>
-                    <div class="product-description__filter_settings">
-                        <div class="settings">
-                            <div class="settings__color_black"></div>
-                            <p class="settings__text">Black</p>
-                        </div>
-                    </div>
-                    <div class="product-description__filter_settings">
-                        <div class="settings">
-                            <div class="settings__color_blue"></div>
-                            <p class="settings__text">Blue</p>
-                        </div>
-                    </div>
-                </div> -->
-
+<table class="container cart">
+    <tr class="cart__heading">
+        <td class="cart__product-details">Product Details</td>
+        <td class="cart__unite-price">unite Price</td>
+        <td class="cart__quantity">Quantity</td>
+        <td class="cart_shipping">shipping</td>
+        <td class="subtotal">subtotal</td>
+        <td class="action">action</td>
+    </tr>
+    <tr class="cart__item">
+        <td class="cart__product-details cart-item">
+            <a href="#" class="cart-item__img"><img src="img/cart-item-1.jpg" alt="cart-item"></a>
+            <div class="cart-item__text">
+                <a href="#" class="cart-item__name">Mango People T-shirt</a>
+                <p class="cart-item__rating">
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star-half-alt star-rating"></i>
+                </p>
+                <p class="cart-item__details">Color: <span>Red</span></p>
+                <p class="cart-item__details">Siz: <span>XS</span></p>
             </div>
-            <div class="product-description__filter_box">
-                <h1 class="product-description__filter_h1">CHOOSE SIZE</h1>
-                <div class="product-description__filter_settings">
-                    <p class="settings__text">XXL</p>
-                    <i class="fas fa-angle-down product-description__angle"></i>
-                </div>
+        </td>
+        <td class="cart__unite-price">$150</td>
+        <td class="cart__quantity">
+            <form action="#"><input type="text"></form>
+        </td>
+        <td class="cart_shipping">FREE</td>
+        <td class="subtotal">$300</td>
+        <td class="action"><a href="#"><i class="fas fa-times-circle delete"></i></a></td>
+    </tr>
+    <tr class="cart__item">
+        <td class="cart__product-details cart-item">
+            <a href="#" class="cart-item__img"><img src="img/cart-item-2.jpg" alt="cart-item"></a>
+            <div class="cart-item__text">
+                <a href="#" class="cart-item__name">Mango People T-shirt</a>
+                <p class="cart-item__rating">
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star-half-alt star-rating"></i>
+                </p>
+                <p class="cart-item__details">Color: <span>Red</span></p>
+                <p class="cart-item__details">Siz: <span>XS</span></p>
             </div>
-            <div class="product-description__filter_box">
-                <h1 class="product-description__filter_h1">QUANTITY</h1>
-                <input type="text" class="product-description__filter_settings" value="1">
+        </td>
+        <td class="cart__unite-price">$150</td>
+        <td class="cart__quantity">
+            <form action="#"><input type="text"></form>
+        </td>
+        <td class="cart_shipping">FREE</td>
+        <td class="subtotal">$300</td>
+        <td class="action"><a href="#"><i class="fas fa-times-circle delete"></i></a></td>
+    </tr>
+    <tr class="cart__item">
+        <td class="cart__product-details cart-item">
+            <a href="#" class="cart-item__img"><img src="img/cart-item-3.jpg" alt="cart-item"></a>
+            <div class="cart-item__text">
+                <a href="#" class="cart-item__name">Mango People T-shirt</a>
+                <p class="cart-item__rating">
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star star-rating"></i>
+                    <i class="fas fa-star-half-alt star-rating"></i>
+                </p>
+                <p class="cart-item__details">Color: <span>Red</span></p>
+                <p class="cart-item__details">Siz: <span>XS</span></p>
             </div>
-        </div>
-        <a href="#" class="product-description__button">
-            <img src="img/cart-red.svg" alt="cart">
-            Add to Cart
-        </a>
-    </section>
+        </td>
+        <td class="cart__unite-price">$150</td>
+        <td class="cart__quantity">
+            <form action="#"><input type="text"></form>
+        </td>
+        <td class="cart_shipping">FREE</td>
+        <td class="subtotal">$300</td>
+        <td class="action"><a href="#"><i class="fas fa-times-circle delete"></i></a></td>
+    </tr>
+</table>
+<div class="container cart-buttons">
+    <a href="#" class="cart-buttons__button">cLEAR SHOPPING CART</a>
+    <a href="#" class="cart-buttons__button">cONTINUE sHOPPING</a>
 </div>
-<section class="addition-offer">
-    <h1 class="addition-offer__h1">you may like also</h1>
-    <div class="container product">
-        <div class="product__item">
-            <a href="#" class="product__link">
-                <img src="img/add-offer-1.jpg" alt="product1">
-                <div class="product__name">
-                    <h4>Mango People T-shirt</h4>
-                    <h4>$52.00</h4>
-                </div>
-            </a>
-            <a href="#" class="product__add"><img src="img/cart_white.svg" alt="cart" class="add__image">Add to Cart</a>
+<div class="container deal-terms">
+    <div class="deal-terms__box">
+        <h1 class="deal-terms__h1">Shipping Adress</h1>
+        <form action="#">
+            <div class="form__box">
+                <select class="deal-terms__input deal-terms__input_country">
+                    <option>Bangladesh</option>
+                    <option>USA</option>
+                    <option>Russian Federation</option>
+                </select>
+            </div>
+            <div class="form__box">
+                <input class="deal-terms__input" type="text" placeholder="State">
+            </div>
+            <div class="form__box">
+                <input class="deal-terms__input" type="text" placeholder="Postcode / Zip">
+            </div>
+            <div class="form__box">
+                <input class="deal-terms__button" type="submit" value="get a quote">
+            </div>
+        </form>
+    </div>
+    <div class="deal-terms__box">
+        <h1 class="deal-terms__h1">coupon discount</h1>
+        <p class="deal-terms__p">Enter your coupon code if you have one</p>
+        <div class="form__box">
+            <input class="deal-terms__input" type="text" placeholder="State">
         </div>
-        <div class="product__item">
-            <a href="#" class="product__link">
-                <img src="img/add-offer-4.jpg" alt="product1">
-                <div class="product__name">
-                    <h4>Mango People T-shirt</h4>
-                    <h4>$52.00</h4>
-                </div>
-            </a>
-            <a href="#" class="product__add"><img src="img/cart_white.svg" alt="cart" class="add__image">Add to Cart</a>
-        </div>
-        <div class="product__item">
-            <a href="#" class="product__link">
-                <img src="img/add-offer-3.jpg" alt="product1">
-                <div class="product__name">
-                    <h4>Mango People T-shirt</h4>
-                    <h4>$52.00</h4>
-                </div>
-            </a>
-            <a href="#" class="product__add"><img src="img/cart_white.svg" alt="cart" class="add__image">Add to Cart</a>
-        </div>
-        <div class="product__item">
-            <a href="#" class="product__link">
-                <img src="img/add-offer-4.jpg" alt="product1">
-                <div class="product__name">
-                    <h4>Mango People T-shirt</h4>
-                    <h4>$52.00</h4>
-                </div>
-            </a>
-            <a href="#" class="product__add"><img src="img/cart_white.svg" alt="cart" class="add__image">Add to Cart</a>
+        <div class="form__box">
+            <input class="deal-terms__button" type="submit" value="Apply coupon">
         </div>
     </div>
-</section>
+    <div class="deal-terms__box_checkout">
+        <div class="deal-terms__total">
+            <p class="deal-terms__p_total">Sub total <span>$900</span></p>
+            <h1 class="deal-terms__h1">GRAND TOTAL <span>$900</span></h1>
+        </div>
+        <a href="#" class="deal-terms__button_total">proceed to checkout</a>
+    </div>
+</div>
 <div class="subscribe">
     <div class="container subscribe__box">
         <div class="subscribe__block subscribe__block_left">

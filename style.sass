@@ -1,9 +1,9 @@
 $width: 1140px
+$pink: #f16d7f
 
 *
   margin: 0
   padding: 0
-
 
 
 body
@@ -48,7 +48,7 @@ body button:hover
     padding-right: 12px
 
   .d
-    color: #f16d7f
+    color: $pink
     font-weight: 400
 
   &__form__input
@@ -80,6 +80,7 @@ body button:hover
   &__block
     display: flex
     align-items: center
+
     &_right
       position: relative
 
@@ -103,9 +104,9 @@ body button:hover
   width: $width
 
 
-.button 
+.button
   height: 38px
-  background-color: #f16d7f
+  background-color: $pink
   font-size: 15px
   font-weight: 400
   letter-spacing: 0.38px
@@ -113,12 +114,12 @@ body button:hover
   line-height: 38px
   padding-left: 15px
   padding-right: 15px
+
   img
     padding-left: 8px
 
 
-
-.menu 
+.menu
   list-style-type: none
   display: flex
   justify-content: center
@@ -131,10 +132,11 @@ body button:hover
     font-weight: 700
     text-transform: uppercase
     padding: 14px 23px
+
     &:hover
       border-bottom: 3px solid #ef5b70
 
-.slider 
+.slider
   height: 613px
   background-color: #e8e8e8
 
@@ -164,12 +166,12 @@ body button:hover
 
   .slider__text
     padding-left: 12px
-    border-left: 12px solid #f16d7f
+    border-left: 12px solid $pink
 
   .fasion
-    color: #f16d7f
+    color: $pink
 
-.category 
+.category
   margin-top: 98px
   display: flex
   justify-content: space-between
@@ -187,7 +189,7 @@ body button:hover
     margin-bottom: 20px
 
   &__h2
-    color: #f16d7f
+    color: $pink
     font-size: 30px
     letter-spacing: 0.75px
     font-weight: 900
@@ -215,7 +217,7 @@ body button:hover
     text-transform: uppercase
     letter-spacing: 0.45px
 
-.fetured-items 
+.fetured-items
   height: 210px
   display: flex
   flex-direction: column
@@ -255,7 +257,7 @@ body button:hover
     padding-left: 15px
 
   .product__name h4:nth-of-type(2)
-    color: #f16d7f
+    color: $pink
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
@@ -265,15 +267,18 @@ body button:hover
     position: relative
     margin-bottom: 30px
     transition: box-shadow 0.3s linear
+
     &:hover
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
     &:hover .product__link img
       filter: brightness(50%)
+
     &:hover .product__add
       visibility: visible
 
   &__link img
-    transition: all  0.3s linear
+    transition: all 0.3s linear
 
   &__button__box
     height: 220px
@@ -296,15 +301,13 @@ body button:hover
     align-items: center
     visibility: hidden
     margin-bottom: 9px
-    transition: border  0.3s linear
+    transition: border 0.3s linear
+
     &:hover
-      border: 1px solid #f16d7f
+      border: 1px solid $pink
 
   .add__image
     margin: 8px
-
-
-
 
 
 .batton_product
@@ -315,8 +318,9 @@ body button:hover
   font-size: 16px
   font-weight: 700
   letter-spacing: 0.4px
+
   &:hover
-    background: #f16d7f url(img/arrow_product.png) no-repeat 180px 22px
+    background: $pink url(img/arrow_product.png) no-repeat 180px 22px
 
 .offer
   height: 529px
@@ -345,7 +349,7 @@ body button:hover
     letter-spacing: 0.9px
 
   &_red
-    color: #f16d7f
+    color: $pink
 
   &__conditions__image
     margin-bottom: 17px
@@ -380,9 +384,8 @@ body button:hover
     display: flex
     justify-content: space-around
 
-.slr 
+.slr
   height: 537px
-
 
 
 .subscribe
@@ -392,7 +395,6 @@ body button:hover
   background-repeat: no-repeat
 
   &__box
-    margin-top: 95px
     height: 100%
     display: flex
 
@@ -410,7 +412,7 @@ body button:hover
 
 
   &__h3
-    color: #f16d7f
+    color: $pink
     font-size: 16px
     font-weight: 700
     letter-spacing: 0.4px
@@ -482,7 +484,6 @@ body button:hover
     border: none
 
 
-
 .footer
   height: 537px
   margin-top: -537px
@@ -501,7 +502,7 @@ body button:hover
     margin-top: 29px
 
   &__nav__h4
-    color: #f16d7f
+    color: $pink
     font-size: 18px
     font-weight: 700
     text-transform: uppercase
@@ -519,8 +520,9 @@ body button:hover
     font-size: 16px
     font-weight: 400
     letter-spacing: 0.4px
+
     &:hover
-      color: #f16d7f
+      color: $pink
 
   &__description
     width: 427px
@@ -553,21 +555,20 @@ body button:hover
 
   &__social__links:hover
     color: #f7f7f8
-    background-color: #f16d7f
-
+    background-color: $pink
 
 
 .heading
   height: 148px
   background-color: #f8f3f4
   margin-bottom: 60px
+
   &_single-page
     margin: 0
 
 
-
   &__h1
-    color: #f16d7f
+    color: $pink
     font-size: 24px
     font-weight: 400
     text-transform: uppercase
@@ -591,18 +592,16 @@ body button:hover
     font-size: 14px
     font-weight: 300
     text-transform: uppercase
+
     &:hover
-      color: #f16d7f
+      color: $pink
 
   &__bread-crumbs_active
-    color: #f16d7f
+    color: $pink
     font-weight: 700
 
 
-
-
-
-.sidebar__summary 
+.sidebar__summary
   width: 243px
   height: 37px
   line-height: 37px
@@ -619,74 +618,71 @@ body button:hover
   box-sizing: border-box
 
 
-
-.sidebar__summary::-webkit-details-marker 
+.sidebar__summary::-webkit-details-marker
   display: none
 
 
-.sidebar__summary::after 
+.sidebar__summary::after
   content: '\25bc'
 
 
-.sidebar__category[open] > summary 
+.sidebar__category[open] > summary
   color: #ef5b70
 
 
-.sidebar__category[open] > summary::after 
+.sidebar__category[open] > summary::after
   content: '\25b2'
 
-.sidebar__ul 
+.sidebar__ul
   list-style-type: none
   margin-bottom: 40px
 
 
-.sidebar__links 
+.sidebar__links
   color: #6f6e6e
   font-size: 14px
   font-weight: 400
 
 
-
-.sidebar__list 
+.sidebar__list
   padding-left: 12px
   margin-bottom: 15px
 
 
-.sidebar__links:hover 
+.sidebar__links:hover
   color: #ef5b70
 
 
-.button_input:focus 
+.button_input:focus
   border: none
   outline: none
 
 
-.button_input:hover 
+.button_input:hover
   cursor: pointer
 
 
-.product__content 
+.product__content
   display: flex
   justify-content: space-between
   margin-bottom: 110px
 
 
-.product__settings 
+.product__settings
   width: 263px
   margin-right: 30px
 
-.product__settings:last-of-type  
+.product__settings:last-of-type
   margin-right: 0
 
 
-
-.product__settins__box 
+.product__settins__box
   display: flex
   justify-content: space-between
   margin-bottom: 30px
 
 
-.product__settings__h3 
+.product__settings__h3
   color: #6f6e6e
   font-size: 14px
   font-weight: 700
@@ -694,7 +690,7 @@ body button:hover
   margin-bottom: 24px
 
 
-.tranding__names__ul 
+.tranding__names__ul
   list-style-type: none
   display: flex
   flex-wrap: wrap
@@ -704,50 +700,49 @@ body button:hover
   font-weight: 400
 
 
-.tranding__names__li 
+.tranding__names__li
   line-height: 12px
   padding-right: 8px
   padding-left: 8px
   border-right: 1px solid #dfdfdf
   margin-bottom: 10px
 
-.tranding__names__li a 
+.tranding__names__li a
   display: block
 
-.tranding__names__li a:hover 
+.tranding__names__li a:hover
   color: #ef5b70
 
-.tranding__names__ul .tranding__names__li:nth-child(3n) 
+.tranding__names__ul .tranding__names__li:nth-child(3n)
   border-right: none
 
 .tranding__names__ul .tranding__names__li:nth-child(3n+1)
   padding-left: 0
 
 
-.checkbox_text 
+.checkbox_text
   color: #6f6e6e
   font-size: 14px
   font-weight: 400
   text-transform: uppercase
 
 
-.product__settings__form 
+.product__settings__form
   display: flex
   justify-content: space-between
 
 
-.product__settings__form .product__settings__form__checkbox:nth-child(n+5) 
+.product__settings__form .product__settings__form__checkbox:nth-child(n+5)
   margin-right: 18px
 
 
-
-.product__settings__form__checkbox input 
+.product__settings__form__checkbox input
   position: absolute
   z-index: -1
   opacity: 0
   margin: 10px 0 0 20px
 
-.checkbox__text 
+.checkbox__text
   position: relative
   padding: 0 0 0 20px
   cursor: pointer
@@ -757,7 +752,7 @@ body button:hover
   text-transform: uppercase
 
 
-.checkbox__text:before 
+.checkbox__text:before
   content: ''
   position: absolute
   left: 0
@@ -767,7 +762,7 @@ body button:hover
   background-color: #ffffff
 
 
-.checkbox__text:after 
+.checkbox__text:after
   content: ''
   position: absolute
   width: 5px
@@ -780,21 +775,19 @@ body button:hover
   top: 1px
 
 
-.product__settings__form__checkbox input:not(:checked) + .checkbox__text:after 
+.product__settings__form__checkbox input:not(:checked) + .checkbox__text:after
   opacity: 0
 
 
-.product__settings__form__checkbox input:checked + .checkbox__text:after 
+.product__settings__form__checkbox input:checked + .checkbox__text:after
   opacity: 1
 
 
-
-
-.product__settings__form__checkbox 
+.product__settings__form__checkbox
   margin-bottom: 13px
 
 
-.product__sort 
+.product__sort
   height: 50px
   background-color: #f3f3f3
   padding: 10px
@@ -803,44 +796,41 @@ body button:hover
   margin-bottom: 50px
 
 
-
-
-
-
-.product__sort__box 
+.product__sort__box
   height: 30px
   border: 1px solid #ebebeb
   background-color: #ffffff
   display: flex
   align-items: center
   margin-right: 10px
-.product__sort_name__box 
+
+.product__sort_name__box
   padding: 10px
   box-sizing: border-box
   border-right: 1px solid #ebebeb
   color: #6f6e6e
   font-size: 14px
   font-weight: 400
-.fas_sort 
+
+.fas_sort
   margin-left: 20px
 
-.sort__box__drop:hover 
+.sort__box__drop:hover
   color: #ef5b70
 
 
-
-.sidebar 
+.sidebar
   margin-right: 55px
 
 
-.product__add_2 
+.product__add_2
   position: static
   width: 57px
   height: 38px
   border-radius: 3px
 
 
-.product__add_1 
+.product__add_1
   position: static
   border-radius: 3px
 
@@ -855,19 +845,18 @@ body button:hover
   width: 123px
 
 
-.pagination 
+.pagination
   border-radius: 3px
   border: 1px solid #ebebeb
   background-color: #ffffff
   padding: 0 8px
 
 
-.pagination__ul 
+.pagination__ul
   list-style-type: none
   height: 100%
   display: flex
   align-items: center
-
 
 
 .pagination__ul .page_item:first-of-type .page_link,
@@ -875,7 +864,7 @@ body button:hover
   color: #aaaaaa
 
 
-.pagination_button 
+.pagination_button
   height: 44px
   border-radius: 3px
   border: 1px solid #ef5b70
@@ -887,44 +876,45 @@ body button:hover
   line-height: 44px
 
 
-.pagination_button:hover 
+.pagination_button:hover
   border: 1px solid #fff
   color: #fff
   background-color: #ef5b70
 
 
-.pagination_block 
+.pagination_block
   display: flex
   justify-content: space-between
 
 
-
-
-.page_link 
+.page_link
   color: #c4c4c4
   font-size: 16px
   font-weight: bold
   padding: 12px 8px
 
 
-.page_link:hover 
-  color: #ef5b70!important
+.page_link:hover
+  color: #ef5b70 !important
 
 
-.conditions 
+.conditions
   background-color: #222224
   display: flex
   height: 341px
+
   &__content
     display: flex
     justify-content: space-between
     align-items: center
+
 .conditions__block
   display: flex
   flex-direction: column
   align-items: center
+
   .conditions__text
-    padding: 0!important
+    padding: 0 !important
     display: flex
     flex-direction: column
     align-items: center
@@ -938,7 +928,7 @@ body button:hover
   top: 46px
   z-index: 1
 
-  &::before 
+  &::before
     content: ''
     width: 10px
     height: 10px
@@ -950,7 +940,7 @@ body button:hover
     transform: rotate(45deg)
     border-top: 1px solid #ececec
     border-left: 1px solid #ececec
-    
+
   &__ul
     list-style-type: none
 
@@ -1019,10 +1009,10 @@ body button:hover
 
 .delete
   color: #c0c0c0
+
   &:hover
     transform: rotate(90deg)
     transition: 0.3s ease
-
 
 
 .cart-drop
@@ -1069,7 +1059,7 @@ body button:hover
     border-bottom: 1px solid #ededed
 
   &__price
-    color: #f16d7f
+    color: $pink
     font-size: 12px
     font-weight: 400
     text-transform: uppercase
@@ -1102,9 +1092,10 @@ body button:hover
     text-align: center
     line-height: 50px
     margin-bottom: 10px
+
     &:hover
-      border: 1px solid #f16d7f
-      color: #f16d7f
+      border: 1px solid $pink
+      color: $pink
       transition: 0.3s ease
 
 
@@ -1122,10 +1113,12 @@ body button:hover
   display: flex
   flex-direction: column
   align-items: center
+
 .image-slider
   position: relative
   height: 777px
-  max-width: 1607px
+
+
   &__control
     position: absolute
     width: 15%
@@ -1133,12 +1126,15 @@ body button:hover
     top: 0
     display: flex
     align-items: center
+
     &_left
       left: 0
+
     &_right
       right: 0
       display: flex
       justify-content: flex-end
+
     &:hover .control-icon
       opacity: 0.5
 
@@ -1151,8 +1147,10 @@ body button:hover
     justify-content: center
     align-items: center
     transition: opacity 0.3s ease
+
     &:hover
       opacity: 0.5
+
     &__item
       color: #ffffff
       font-size: 24px
@@ -1167,18 +1165,21 @@ body button:hover
   background-color: #ffffff
   margin-top: -86px
   z-index: 1
+
   &__h3
-    color: #f16d7f
+    color: $pink
     font-size: 14px
     font-weight: 700
     text-transform: uppercase
     padding-top: 73px
+
   &__h1
     color: #4d4d4d
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
     margin-bottom: 67px
+
   &__p
     color: #5e5e5e
     font-size: 14px
@@ -1187,17 +1188,20 @@ body button:hover
     margin: 0 auto
     line-height: 24px
     margin-bottom: 28px
+
   &__details
     max-width: 334px
     margin: 0 auto
     display: flex
     justify-content: space-between
+
     &_h2
       color: #2f2f2f
       font-size: 14px
       font-weight: 700
       text-transform: uppercase
       margin-right: 44px
+
       span
         color: #b9b9b9
 
@@ -1216,10 +1220,12 @@ body button:hover
     align-items: center
     margin-top: 14px
     margin-bottom: 17px
+
     &_thin
       height: 1px
       width: 42px
       background-color: #eaeaea
+
     &_bold
       height: 3px
       width: 63px
@@ -1236,6 +1242,7 @@ body button:hover
     display: flex
     justify-content: space-between
     margin-top: 63px
+
     &_h1
       color: #2f2f2f
       font-size: 14px
@@ -1243,6 +1250,7 @@ body button:hover
       text-transform: uppercase
       text-align: left
       margin-bottom: 16px
+
     &_settings
       width: 142px
       height: 33px
@@ -1255,29 +1263,35 @@ body button:hover
       color: #bcbcbc
       font-size: 14px
       font-weight: 400
+
     .settings
       display: flex
       align-items: center
+
       &__color_red
         width: 12px
         height: 12px
         background-color: #ef5b70
         margin-right: 11px
+
       &__color_green
         width: 12px
         height: 12px
         background-color: green
         margin-right: 11px
+
       &__color_black
         width: 12px
         height: 12px
         background-color: black
         margin-right: 11px
+
       &__color_blue
         width: 12px
         height: 12px
         background-color: blue
         margin-right: 11px
+
       &__text
         color: #bcbcbc
         font-size: 14px
@@ -1298,8 +1312,10 @@ body button:hover
     padding: 0 206px
     margin-top: 28px
     margin-bottom: 122px
+
     & img
       margin-right: 15px
+
     &:hover
       background-color: #ef5b70
       color: #fff
@@ -1315,3 +1331,151 @@ body button:hover
     text-align: center
     margin-bottom: 72px
 
+.cart
+  & td
+    padding-top: 25px
+    padding-bottom: 25px
+    border-bottom: 1px solid #eaeaea
+
+  &__heading
+    & td
+      color: #222222
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: -0.2px
+
+  &__product-details
+    width: 500px
+
+  .cart-item
+    display: flex
+
+    &__name
+      color: #222222
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      text-decoration: none
+      margin-bottom: 10px
+
+    &__rating
+      margin-bottom: 15px
+
+    &__details
+      color: #6f6e6e
+      font-size: 13px
+      font-weight: 700
+      line-height: 20px
+
+      span
+        color: #575757
+        font-weight: 300
+
+  & td:nth-child(n+2)
+    text-align: center
+
+  &__quantity input
+    width: 54px
+    height: 30px
+
+.cart-buttons
+  display: flex
+  justify-content: space-between
+
+  &__button
+    height: 50px
+    padding: 0 40px
+    text-decoration: none
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid #eaeaea
+    line-height: 50px
+    margin-top: 44px
+    transition: border-color 0.3s ease
+
+    &:hover
+      border: 1px solid $pink
+
+.deal-terms
+  display: flex
+  justify-content: space-between
+  padding-top: 63px
+  padding-bottom: 79px
+  &__box_checkout
+    background-color: #f5f3f3
+    padding: 40px
+    height: min-content
+
+  &__h1
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 20px
+    & span
+      color: $pink
+
+  &__input
+    width: 355px
+    height: 45px
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    margin-bottom: 20px
+    padding: 0 18px
+    box-sizing: border-box
+    &::-webkit-input-placeholder
+      color: #b1b1b1
+    &::-moz-placeholder
+      color: #b1b1b1
+
+    &_country
+      width: 357px
+
+  &__button
+    height: 35px
+    padding: 0 15px
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    &:hover
+      cursor: pointer
+      border: 1px solid $pink
+    &_total
+      display: block
+      height: 50px
+      line-height: 50px
+      padding: 0 42px
+      color: #ffffff
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      background-color: #f16d7f
+      margin-top: 17px
+
+  &__p
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+    margin-bottom: 24px
+    &_total
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 14px
+
+  &__total
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    border-bottom: 1px solid #e2e2e2
+    & span
+      padding-left: 20px

@@ -936,6 +936,7 @@ body button:hover
   border: 1px solid #ececec
   position: absolute
   top: 46px
+  z-index: 1
 
   &::before 
     content: ''
@@ -1118,13 +1119,13 @@ body button:hover
   animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
 
 .product-box
-  position: relative
-  height: 1421px
+  display: flex
+  flex-direction: column
+  align-items: center
 .image-slider
   position: relative
   height: 777px
   max-width: 1607px
-  margin: 0 auto
   &__control
     position: absolute
     width: 15%
@@ -1158,16 +1159,14 @@ body button:hover
 
 
 .product-description
-  position: absolute
   text-align: center
   border: 1px solid #eaeaea
   display: flex
   flex-direction: column
   align-items: center
   background-color: #ffffff
-  left: 0
-  right: 0
-  bottom: -50px
+  margin-top: -86px
+  z-index: 1
   &__h3
     color: #f16d7f
     font-size: 14px

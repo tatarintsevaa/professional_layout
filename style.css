@@ -579,10 +579,14 @@ body button:hover {
   padding-right: 8px;
   padding-left: 8px;
   border-right: 1px solid #dfdfdf;
-  margin-bottom: 10px; }
+  margin-bottom: 18px; }
 
 .tranding__names__li a {
-  display: block; }
+  display: block;
+  text-decoration: none;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400; }
 
 .tranding__names__li a:hover {
   color: #ef5b70; }
@@ -619,7 +623,8 @@ body button:hover {
   color: #6f6e6e;
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 10px; }
 
 .checkbox__text:before {
   content: "";
@@ -773,7 +778,7 @@ body button:hover {
   padding: 12px 20px 20px;
   border: 1px solid #ececec;
   position: absolute;
-  top: 46px;
+  top: 59px;
   z-index: 1; }
   .drop::before {
     content: "";
@@ -787,6 +792,34 @@ body button:hover {
     transform: rotate(45deg);
     border-top: 1px solid #ececec;
     border-left: 1px solid #ececec; }
+  .drop_kids {
+    left: -90px; }
+    .drop_kids::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      top: -6px;
+      left: 122px;
+      transform: rotate(45deg);
+      border-top: 1px solid #ececec;
+      border-left: 1px solid #ececec; }
+  .drop_accessories {
+    left: -172px; }
+    .drop_accessories::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      top: -6px;
+      left: 230px;
+      transform: rotate(45deg);
+      border-top: 1px solid #ececec;
+      border-left: 1px solid #ececec; }
   .drop__ul {
     list-style-type: none; }
   .drop__link {
@@ -795,7 +828,10 @@ body button:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
-    line-height: 28px; }
+    line-height: 28px;
+    transition: color 0.2s ease-in; }
+    .drop__link:hover {
+      color: #f16d7f; }
   .drop__h3 {
     color: #232323;
     font-size: 14px;
@@ -819,7 +855,10 @@ body button:hover {
     padding: 12px 10px;
     box-sizing: border-box;
     align-self: flex-end;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease-in; }
+    .drop__banner:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.16); }
 
 .banner__text {
   color: #ffffff;
@@ -829,13 +868,18 @@ body button:hover {
   text-transform: uppercase; }
 
 .menu__list {
-  position: relative; }
+  position: relative;
+  padding: 20px 0; }
 
 .menu__list:hover .drop_mega-menu {
-  display: flex; }
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in; }
 
 .drop_mega-menu {
-  display: none; }
+  display: flex;
+  visibility: hidden;
+  opacity: 0; }
 
 .star-rating {
   color: #e4af48;
@@ -856,8 +900,7 @@ body button:hover {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   opacity: 0;
-  visibility: hidden;
-  z-index: 1; }
+  visibility: hidden; }
   .cart-drop::before {
     content: "";
     width: 10px;
@@ -870,7 +913,8 @@ body button:hover {
     transform: rotate(45deg);
     border-top: 1px solid #ececec;
     border-left: 1px solid #ececec; }
-  .cart-drop__h3 {
+  .cart-drop__a {
+    display: block;
     color: #222222;
     font-size: 12px;
     font-weight: 700;

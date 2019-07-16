@@ -705,10 +705,14 @@ body button:hover
   padding-right: 8px
   padding-left: 8px
   border-right: 1px solid #dfdfdf
-  margin-bottom: 10px
+  margin-bottom: 18px
 
 .tranding__names__li a
   display: block
+  text-decoration: none
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
 
 .tranding__names__li a:hover
   color: #ef5b70
@@ -750,6 +754,7 @@ body button:hover
   font-size: 14px
   font-weight: 400
   text-transform: uppercase
+  margin-bottom: 10px
 
 
 .checkbox__text:before
@@ -925,8 +930,9 @@ body button:hover
   padding: 12px 20px 20px
   border: 1px solid #ececec
   position: absolute
-  top: 46px
+  top: 59px
   z-index: 1
+
 
   &::before
     content: ''
@@ -941,6 +947,36 @@ body button:hover
     border-top: 1px solid #ececec
     border-left: 1px solid #ececec
 
+  &_kids
+    left: -90px
+    &::before
+      content: ''
+      width: 10px
+      height: 10px
+      background-color: #fff
+      display: block
+      position: absolute
+      top: -6px
+      left: 122px
+      transform: rotate(45deg)
+      border-top: 1px solid #ececec
+      border-left: 1px solid #ececec
+
+  &_accessories
+    left: -172px
+    &::before
+      content: ''
+      width: 10px
+      height: 10px
+      background-color: #fff
+      display: block
+      position: absolute
+      top: -6px
+      left: 230px
+      transform: rotate(45deg)
+      border-top: 1px solid #ececec
+      border-left: 1px solid #ececec
+
   &__ul
     list-style-type: none
 
@@ -952,6 +988,10 @@ body button:hover
     font-weight: 400
     letter-spacing: 0.35px
     line-height: 28px
+    transition: color 0.2s ease-in
+    &:hover
+      color: $pink
+
 
 
   &__h3
@@ -983,6 +1023,9 @@ body button:hover
     box-sizing: border-box
     align-self: flex-end
     margin-top: 20px
+    transition: box-shadow 0.3s ease-in
+    &:hover
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.16)
 
 
 .banner__text
@@ -994,14 +1037,17 @@ body button:hover
 
 .menu__list
   position: relative
-
+  padding: 20px 0
 
 .menu__list:hover .drop_mega-menu
-  display: flex
-
+  visibility: visible
+  opacity: 1
+  transition: all 0.3s ease-in
 
 .drop_mega-menu
-  display: none
+  display: flex
+  visibility: hidden
+  opacity: 0
 
 .star-rating
   color: #e4af48
@@ -1025,7 +1071,6 @@ body button:hover
   border: 1px solid #eaeaea
   opacity: 0
   visibility: hidden
-  z-index: 1
 
   &::before
     content: ''
@@ -1041,7 +1086,8 @@ body button:hover
     border-left: 1px solid #ececec
 
 
-  &__h3
+  &__a
+    display: block
     color: #222222
     font-size: 12px
     font-weight: 700

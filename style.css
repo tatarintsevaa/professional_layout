@@ -77,6 +77,12 @@ body button:hover {
     margin-right: 26px; }
   .header .logo_img {
     margin-right: 13px; }
+  .header__button {
+    transition: all 0.2s ease-in; }
+    .header__button:hover {
+      outline: 1px solid #f16d7f;
+      color: #f16d7f;
+      background-color: #ffffff; }
 
 .container {
   margin: 0 auto;
@@ -92,7 +98,7 @@ body button:hover {
   line-height: 38px;
   padding-left: 15px;
   padding-right: 15px; }
-  .button img {
+  .button i {
     padding-left: 8px; }
   .button_product {
     padding-left: 24px;
@@ -271,6 +277,9 @@ body button:hover {
       border: 1px solid #f16d7f; }
   .product .add__image {
     margin: 8px; }
+
+input {
+  outline: none; }
 
 .offer {
   height: 529px;
@@ -1198,7 +1207,8 @@ body button:hover {
   text-align: center; }
 .cart__quantity input {
   width: 54px;
-  height: 30px; }
+  height: 30px;
+  text-align: center; }
 
 .cart-buttons {
   display: flex;
@@ -1259,7 +1269,8 @@ body button:hover {
     font-weight: 700;
     text-transform: uppercase;
     border: 1px solid #eaeaea;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    transition: border-color 0.3s ease; }
     .deal-terms__button:hover {
       cursor: pointer;
       border: 1px solid #f16d7f; }

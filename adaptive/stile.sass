@@ -1,0 +1,84 @@
+*
+  margin: 0
+  padding: 0
+
+$blue: #008dcd
+
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+body
+  font-family: Myriad Pro, sans-serif
+
+body a
+  text-decoration: none
+
+.top
+  flex-grow: 1
+
+.header
+
+  &__box
+    background-image: url(img/bg-320.jpg)
+    height: 288px
+    display: flex
+    justify-content: space-between
+    padding: 27px 21px
+    box-sizing: border-box
+
+  &__h1
+    color: #000000
+    font-size: 2rem
+    font-weight: 700
+    margin-bottom: 21px
+  &__h3
+    color: #000000
+    font-size: 1.5rem
+    font-weight: 400
+    margin-bottom: 21px
+  &__text
+    padding: 21px 21px 27px 21px
+
+.button
+  display: block
+  height: 48px
+  color: #ffffff
+  font-size: 1rem
+  font-weight: 700
+  text-transform: uppercase
+  line-height: 48px
+  text-align: center
+  border-radius: 30px
+  background-color: $blue
+  padding: 0 35px
+  transition: color 0.2s  ease-in
+  &:hover
+    color: #008dcd
+    border: 1px solid $blue
+    background-color: #fff
+
+
+.menu-link
+  &__img
+    color: #fff
+    font-size: 2rem
+
+.description
+  padding: 17px 21px 27px 21px
+  background-color: #f7f7f7
+
+  &__h4
+    color: #000000
+    font-size: 18px
+    font-weight: 400
+    margin-top: 16px
+    margin-bottom: 16px
+
+  &__p
+    color: #000000
+    font-size: 12px
+    font-weight: 400
+    margin-bottom: 16px
+
